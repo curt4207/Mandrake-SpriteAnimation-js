@@ -2,8 +2,8 @@ window.addEventListener("load", function() {
     const canvas = this.document.getElementById("canvas1");
     const ctx = canvas.getContext("2d");
 
-    canvas.width = 500;
-    canvas.height = 500;
+    canvas.width = 1500;
+    canvas.height = 800;
     console.log( "ctx", ctx);
 
     class Mandrake {
@@ -15,15 +15,15 @@ window.addEventListener("load", function() {
             this.spriteHeight = 256;
             this.width = this.spriteWidth;
             this.height = this.spriteHeight;
-            this.scale = 0.7;
+            this.scale = 1.5;
             this.x = this.canvasWidth/2 - this.width * this.scale/2;
             this.y = this.canvasHeight/2 - this.height * this.scale/2;
             this.minFrame = 0;
             this.maxFrame = 355;
             this.frame = 0;
 
-            this.frameX = 3;
-            this.frameY = 2;
+            this.frameX = 0;
+            this.frameY = 0;
         };
 
         draw(context) {
@@ -86,5 +86,11 @@ window.addEventListener("load", function() {
     const hide = document.getElementById("hide");
     hide.addEventListener("click", function() {
         mandrake.setAnimation(263, 355);
+    });
+
+    // Note: the sprite sheet grow animation are from image frame(113, 262)
+    const stop = document.getElementById("stop");
+    stop.addEventListener("click", function() {
+        mandrake.setAnimation(1);
     });
 });
