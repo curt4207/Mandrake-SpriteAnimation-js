@@ -1,45 +1,51 @@
 <!-- Note: Reference: Franks laboratory -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Mandrake</title>
-</head>
-<body>
-    <img id="mandrake" src="mandrake.png" alt="Mandrake">
+  </head>
+  <body>
+    <img id="mandrake" src="mandrake.png" alt="Mandrake" />
     <div id="container">
-        <p>Play Animation:</p>
-        <div id="controls">
-            <!-- Note: Only one Type of animation can play at a time, all the radio button can see each other when using the same name -->
-            <input type="radio" name="animation" id="all" checked>
-            <label for="all">All</label>
-            <!-- Note: Grow animation -->
-            <input type="radio" name="animation" id="grow">
-            <label for="grow">Grow</label>
+      <h1>Mandrake</h1>
+      <div id="controls">
+        <h2>Play Animation:</h2>
+        
+        <!-- Note: Stop animation -->
+        <input type="radio" name="animation" id="stop" checked />
+        <label for="stop">Stop</label>
 
-            <!-- Note: Wink animation -->
-            <input type="radio" name="animation" id="wink">
-            <label for="wink">Wink</label>
+        <!-- Note: Only one Type of animation can play at a time, all the radio button can see each other when using the same name -->
+        <input type="radio" name="animation" id="all" />
+        <label for="all">All</label>
 
-            <!-- Note: float animation -->
-            <input type="radio" name="animation" id="float">
-            <label for="float">Float</label>
+        <!-- Note: Grow animation -->
+        <input type="radio" name="animation" id="grow" />
+        <label for="grow">Grow</label>
 
-            <!-- Note: Hide animation -->
-            <input type="radio" name="animation" id="hide">
-            <label for="hide">Hide</label>
-            
-            <!-- Note: Stop animation -->
-            <input type="radio" name="animation" id="stop">
-            <label for="stop">Stop</label>
-        </div>
-        <canvas id="canvas1"></canvas>
+        <!-- Note: Wink animation -->
+        <input type="radio" name="animation" id="wink" />
+        <label for="wink">Wink</label>
+
+        <!-- Note: float animation -->
+        <input type="radio" name="animation" id="float" />
+        <label for="float">Float</label>
+
+        <!-- Note: Hide animation -->
+        <input type="radio" name="animation" id="hide" />
+        <label for="hide">Hide</label>
+      </div>
+      <canvas id="canvas1"></canvas>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

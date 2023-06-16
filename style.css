@@ -7,43 +7,68 @@
 body {
   display: flex;
   justify-content: center;
-  font-family: "Bangers", cursive;
+  font-family: "Bangers", cursive; 
 }
 p {
   font-size: 45px;
-
 }
 
 input {
-    display: none;
+  display: none;
 }
-
 
 #container {
   display: flex;
-
+  margin-top: 20px;
   flex-direction: column;
   padding: 10px;
   padding-top: 0;
   box-shadow: 5px 8px 10px black;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 #controls {
   font-size: 35px;
   margin: 10px;
   display: flex;
-  gap: 50px;
+  gap: 40px;
 }
 
-#controls > p {
-  font-size: 65px;
+label  {
+  color: #e6e0e0;
+  text-shadow:  2px 2px 2px rgb(88, 10, 99);
 }
+
+label:hover {
+  color: rgb(129, 3, 255);
+  transform: scale(1.2);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  width: fit-content;
+  /* display: none; */
+}
+
+/* #controls:hover > .hide {
+  display: block;
+  color: red;
+} */
 
 canvas {
   border: 1px solid black;
   box-shadow: inset 5px 5px 5px black;
   background-image: url("/105_mushroom_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
 }
 
 #mandrake {
